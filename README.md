@@ -1,46 +1,41 @@
-# 📡 Wilkinson Power Divider Design & Simulation (4.5 GHz)
+# 4.5 GHz Microstrip Wilkinson Power Divider Design & Optimization
 
-This repository contains the design, electromagnetic modeling, and S-parameter analysis of a **Wilkinson Power Divider** optimized for the **4.5 GHz** center frequency using **CST Studio Suite 2025**.
+This repository contains the design, simulation, and optimization of a microstrip Wilkinson Power Divider operating at a center frequency of 4.5 GHz. The project was developed using **CST Studio Suite 2025** and focuses on realistic modeling by incorporating SMD component parasitic effects.
 
 ## 🚀 Project Overview
-The project focuses on developing a high-performance microstrip power divider with the following objectives:
-* **Equal Power Splitting:** 50/50 power distribution from Port 1 to Ports 2 and 3.
-* **Impedance Matching:** All ports matched to $50 \Omega$ to minimize reflections.
-* **Isolation:** High isolation ($>20$ dB) between output ports via a $100 \Omega$ lumped resistor.
+Unlike ideal theoretical models, this design accounts for real-world manufacturing tolerances and parasitic elements. The performance was optimized using "Parameter Sweep" and "Full-Wave EM Simulation" techniques to compensate for frequency shifts and loss.
 
-## 🛠 Design Parameters (4.5 GHz Optimization)
-The dimensions were calculated based on transmission line theory for the **Rogers RO4350B** substrate ($\epsilon_r = 3.66$, $h = 1.524$ mm).
+## 🛠 Technical Specifications
+* **Center Frequency:** 4.5 GHz
+* **Substrate:** $h = 1.524$ mm, $\varepsilon_r \approx 3.53$ (High-frequency compatible laminate)
+* **Characteristic Impedance:** $50 \, \Omega$ (Input/Output), $\sqrt{2}Z_0 \approx 70.7 \, \Omega$ (Quarter-wave arms)
+* **Isolation Resistor:** $100 \, \Omega$ (Modeled with realistic parasitics)
 
-| Parameter | Value (mm) | Description |
-| :--- | :--- | :--- |
-| **in_rad** | 6.0 | Inner radius of the circular transformation arms |
-| **out_rad** | 7.8 | Outer radius of the circular transformation arms |
-| **width** | 3.1 | Feed line width for $50 \Omega$ matching |
-| **mejera** | 1.8 | Quarter-wave arm width for $70.7 \Omega$ impedance |
-| **R_iso** | 100 $\Omega$ | Isolation resistor (Lumped element) |
+## 📈 Design & Optimization Workflow
 
-## 📊 Simulation Results (4.0 - 5.0 GHz)
+### 1. Realistic SMD Parasitic Modeling
+To observe the impact of physical resistor packaging on RF performance, the following parasitics were included:
+* **Series Inductance (L):** $1.0$ nH (Package lead inductance)
+* **Parallel Capacitance (C):** $0.05$ pF
+* **Landing Pattern:** A $1.3$ mm gap (mezera) was defined using "Pick Face" operations on the vertical copper edges for high-fidelity connection modeling.
 
-### 1. S-Parameters Analysis
-* **S11 (Input Return Loss):** Below -20 dB at 4.5 GHz, indicating excellent input matching.
-* **S21 & S31 (Insertion Loss):** Approximately -3.2 dB, representing near-ideal power division.
-* **S23 (Isolation):** Significant dip at 4.5 GHz, confirming port-to-port isolation.
+### 2. Numerical Convergence & Meshing
+To ensure simulation accuracy and satisfy the "three mesh steps" rule for lumped elements:
+* **Cells per wavelength:** Increased to 30 for high-resolution field analysis.
+* **Boundary Conditions:** The Zmin boundary was set to "Electric (Et=0)" to stabilize the ground reference and resolve numerical errors.
+* **Complexity:** Final convergence was achieved with approximately 32,000 mesh cells.
 
-### 2. Tolerance & Sensitivity Analysis
-To ensure design reliability against manufacturing variations, a sensitivity analysis was performed on the **Rogers RO4350B** substrate:
-* **Dielectric Tolerance:** Simulated $\epsilon_r$ variations within $\pm 0.05$.
-* **Findings:** Despite production-level variations, isolation performance remained consistently below the **-20 dB safety threshold**. 
-* **Frequency Shift:** The center frequency shift remained within acceptable limits, confirming the design's robustness for real-world fabrication.
+### 3. Parameter Sweep & Tuning
+The added parasitic inductance caused a frequency upshift to ~4.65 GHz. Optimization was performed via:
+* **Resistance ($resistor\_R$):** Swept between 80-120 $\Omega$ to find the optimal isolation depth.
+* **Arm Length ($lengthram$):** Physically tuned to pull the resonance frequency back to the 4.5 GHz target.
 
+## 📊 Simulation Results
+* **$S_{11}$ (Return Loss):** Achieved an impedance match of approximately $-7.5$ dB at the design frequency.
+* **$S_{21} / S_{31}$ (Insertion Loss):** Perfect power division symmetry observed at $\sim -3.5$ dB.
+* **$S_{23}$ (Isolation):** Stable port-to-port isolation maintained at $\sim -14$ dB despite parasitic effects.
 
+## 🔜 Future Work
+* Exporting the geometry to **Altium Designer** for final PCB layout and manufacturing preparation.
+* Integration of the Wilkinson Divider with a **Vivaldi Antenna** array to analyze total system gain and radiation patterns.
 
-## ⚠️ Engineering Insights & Optimization
-1. **Port Narrowing:** Resized Waveguide Ports from full-substrate width to the specific microstrip width ($3.1$ mm) to eliminate parasitic capacitance.
-2. **Frequency Tuning:** Adjusted the `in_rad` and `out_rad` parameters iteratively to center the resonance precisely at 4.5 GHz.
-3. **Boundary Conditions:** Utilized "Open (add space)" boundaries to accurately account for fringe fields and radiation effects.
-
-## 💻 Setup & Simulation
-1. Open the `.cst` project file in **CST Studio Suite 2025**.
-2. Check the **Parameter List** for 4.5 GHz values.
-3. Run the **Transient Solver** (use Parameter Sweep for further tolerance tests).
-4. Verify results in **1D Results -> S-Parameters**.
