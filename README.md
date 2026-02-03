@@ -1,41 +1,40 @@
-# 4.5 GHz Microstrip Wilkinson Power Divider Design & Optimization
+# 4.5 GHz Microstrip Wilkinson Power Divider: From EM Simulation to PCB Fabrication
 
-This repository contains the design, simulation, and optimization of a microstrip Wilkinson Power Divider operating at a center frequency of 4.5 GHz. The project was developed using **CST Studio Suite 2025** and focuses on realistic modeling by incorporating SMD component parasitic effects.
+This repository covers the complete engineering lifecycle of a **Wilkinson Power Divider** operating at 4.5 GHz. The project bridges the gap between high-fidelity electromagnetic simulations in **CST Studio Suite** and professional hardware implementation in **Altium Designer**.
 
 ## 🚀 Project Overview
-Unlike ideal theoretical models, this design accounts for real-world manufacturing tolerances and parasitic elements. The performance was optimized using "Parameter Sweep" and "Full-Wave EM Simulation" techniques to compensate for frequency shifts and loss.
+Unlike ideal theoretical models, this design accounts for real-world manufacturing tolerances and parasitic elements. The performance was optimized using "Parameter Sweep" and "Full-Wave EM Simulation" techniques to compensate for frequency shifts and loss, resulting in industry-standard **Gerber** files ready for production.
 
 ## 🛠 Technical Specifications
 * **Center Frequency:** 4.5 GHz
 * **Substrate:** $h = 1.524$ mm, $\varepsilon_r \approx 3.53$ (High-frequency compatible laminate)
-* **Characteristic Impedance:** $50 \, \Omega$ (Input/Output), $\sqrt{2}Z_0 \approx 70.7 \, \Omega$ (Quarter-wave arms)
-* **Isolation Resistor:** $100 \, \Omega$ (Modeled with realistic parasitics)
+* **Characteristic Impedance:** $50\,\Omega$ (Input/Output), $\sqrt{2}Z_0 \approx 70.7\,\Omega$ (Quarter-wave arms)
+* **Isolation Resistor:** $100\,\Omega$ - $120\,\Omega$ (Modeled with realistic 0603 package parasitics)
+* **PCB Dimensions:** $60\,\text{mm} \times 40\,\text{mm}$
 
-## 📈 Design & Optimization Workflow
+## 📉 Design & Optimization Workflow
 
-### 1. Realistic SMD Parasitic Modeling
-To observe the impact of physical resistor packaging on RF performance, the following parasitics were included:
-* **Series Inductance (L):** $1.0$ nH (Package lead inductance)
-* **Parallel Capacitance (C):** $0.05$ pF
-* **Landing Pattern:** A $1.3$ mm gap (mezera) was defined using "Pick Face" operations on the vertical copper edges for high-fidelity connection modeling.
+### 1. High-Fidelity EM Simulation (CST Studio Suite)
+* **Parasitic Modeling:** Included $1.0\,\text{nH}$ series inductance and $0.05\,\text{pF}$ parallel capacitance to observe the impact of physical resistor packaging.
+* **Numerical Accuracy:** Applied a 30 cells-per-wavelength mesh density with "Electric (Et=0)" Zmin boundary conditions for stable ground reference.
+* **Optimization:** Performed parameter sweeps on `resistor_R` and `lengthram` to pull the resonance frequency back to the 4.5 GHz target after parasitic-induced upshifts.
 
-### 2. Numerical Convergence & Meshing
-To ensure simulation accuracy and satisfy the "three mesh steps" rule for lumped elements:
-* **Cells per wavelength:** Increased to 30 for high-resolution field analysis.
-* **Boundary Conditions:** The Zmin boundary was set to "Electric (Et=0)" to stabilize the ground reference and resolve numerical errors.
-* **Complexity:** Final convergence was achieved with approximately 32,000 mesh cells.
+### 2. Professional PCB Layout (Altium Designer)
+* **Board Shape:** Optimized to a compact $60 \times 40\,\text{mm}$ area on the **Keep-Out Layer**.
+* **Component Alignment:** Standardized component naming (**R1**) with vertical orientation to minimize signal interference and align with high-frequency design standards.
+* **RF Connectors:** Integrated **SMA Edge-Mount** rectangular pads ($1.5\,\text{mm} \times 2.0\,\text{mm}$) optimized for $50\,\Omega$ microstrip transitions.
 
-### 3. Parameter Sweep & Tuning
-The added parasitic inductance caused a frequency upshift to ~4.65 GHz. Optimization was performed via:
-* **Resistance ($resistor\_R$):** Swept between 80-120 $\Omega$ to find the optimal isolation depth.
-* **Arm Length ($lengthram$):** Physically tuned to pull the resonance frequency back to the 4.5 GHz target.
+### 3. Manufacturing Preparation
+* **Gerber Generation:** Produced RS-274X format files with 4:4 (0.0001 mm) decimal precision to maintain microstrip geometry fidelity.
+* **Verification:** Validated copper geometry using **CAMtastic** to ensure perfect connectivity between SMA pads and microstrip traces.
 
 ## 📊 Simulation Results
-* **$S_{11}$ (Return Loss):** Achieved an impedance match of approximately $-7.5$ dB at the design frequency.
-* **$S_{21} / S_{31}$ (Insertion Loss):** Perfect power division symmetry observed at $\sim -3.5$ dB.
-* **$S_{23}$ (Isolation):** Stable port-to-port isolation maintained at $\sim -14$ dB despite parasitic effects.
+* **$S_{11}$ (Return Loss):** Achieved an impedance match of approximately $-7.5\,\text{dB}$ at the design frequency.
+* **$S_{21} / S_{31}$ (Insertion Loss):** Symmetric power division observed at $\sim -3.5\,\text{dB}$.
+* **$S_{23}$ (Isolation):** Stable port-to-port isolation maintained at $\sim -14\,\text{dB}$ despite parasitic inclusions.
 
-## 🔜 Future Work
-* Exporting the geometry to **Altium Designer** for final PCB layout and manufacturing preparation.
-* Integration of the Wilkinson Divider with a **Vivaldi Antenna** array to analyze total system gain and radiation patterns.
+## 📁 Repository Structure
+* `/CST_Simulation`: `.cst` project files and S-parameter plots.
+* `/Altium_Layout`: `.PcbDoc` and project configuration files.
+* `/Gerber_Outputs`: Zipped manufacturing package (`.GTL`, `.GBL`, `.GTO`, `.GM`).
 
