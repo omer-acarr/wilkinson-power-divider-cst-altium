@@ -33,8 +33,5 @@ Unlike ideal theoretical models, this design accounts for real-world manufacturi
 * **$S_{21} / S_{31}$ (Insertion Loss):** Symmetric power division observed at $\sim -3.5\,\text{dB}$.
 * **$S_{23}$ (Isolation):** Stable port-to-port isolation maintained at $\sim -14\,\text{dB}$ despite parasitic inclusions.
 
-## 📁 Repository Structure
-* `/CST_Simulation`: `.cst` project files and S-parameter plots.
-* `/Altium_Layout`: `.PcbDoc` and project configuration files.
-* `/Gerber_Outputs`: Zipped manufacturing package (`.GTL`, `.GBL`, `.GTO`, `.GM`).
+
 
