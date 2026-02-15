@@ -1,0 +1,70 @@
+{
+    "parameters": [
+        {
+            "expr": "40",
+            "name": "width",
+            "value": "40"
+        },
+        {
+            "expr": "60",
+            "name": "length",
+            "value": "60"
+        },
+        {
+            "expr": "1.524",
+            "name": "h_sub",
+            "value": "1.524"
+        },
+        {
+            "expr": "0.035",
+            "name": "h_copper",
+            "value": "0.035"
+        },
+        {
+            "expr": "9",
+            "name": "Out_rad",
+            "value": "9"
+        },
+        {
+            "expr": "7",
+            "name": "In_rad",
+            "value": "7"
+        },
+        {
+            "expr": "2",
+            "name": "h_ram1",
+            "value": "2"
+        },
+        {
+            "expr": "1.3",
+            "name": "mezera",
+            "value": "1.3"
+        },
+        {
+            "expr": "7.4",
+            "name": "lengthram",
+            "value": "7.4"
+        },
+        {
+            "expr": "3.53",
+            "name": "Er_ref",
+            "value": "3.53"
+        },
+        {
+            "expr": "0.05",
+            "name": "Er_delta",
+            "value": "0.05"
+        },
+        {
+            "expr": "0.02",
+            "name": "delta_w",
+            "value": "0.02"
+        },
+        {
+            "expr": "120",
+            "name": "resistor_R",
+            "value": "120"
+        }
+    ],
+    "version": 1
+}

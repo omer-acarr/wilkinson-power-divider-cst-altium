@@ -1,0 +1,13 @@
+{
+   "Author": "LENOVO",
+   "Comment": "",
+   "Last Problem Type": "High Frequency",
+   "Last Solver Type": "HF Time Domain",
+   "Last Solver Type Abb": "t",
+   "Mesh Cells": "",
+   "Mesh Type": "Hexahedral",
+   "Modeler Unique ID": "5:wilkinsn_pd_1 (2).cst?bd4cb510b8e3709aadf5693d6060deae?21730:numberofparameters=10:port=1>mode=1>zre=0>zim=0?port=2>mode=1>zre=0>zim=0?port=3>mode=1>zre=0>zim=0:::in_rad?out_rad?h_copper?h_ram1?h_sub?length?lengthram?mezera?resistor_r?width",
+   "ProjectVersion": "'# MWS Version: Version 2025.0 - Aug 30 2024 - ACIS 34.0.1 -",
+   "Results": "Time Domain: S-Parameter",
+   "Version": "3"
+}

@@ -1,0 +1,74 @@
+{
+   "execution": {
+      "classname": "SMAPowerByEmagHPCFrame",
+      "libname": "SMAPowerByEmagUI"
+   },
+   "inputVariables": [
+      {
+         "name": "width",
+         "type": "float",
+         "value": 40.0
+      },
+      {
+         "name": "length",
+         "type": "float",
+         "value": 60.0
+      },
+      {
+         "name": "h_sub",
+         "type": "float",
+         "value": 1.524
+      },
+      {
+         "name": "h_copper",
+         "type": "float",
+         "value": 0.035
+      },
+      {
+         "name": "Out_rad",
+         "type": "float",
+         "value": 9.0
+      },
+      {
+         "name": "In_rad",
+         "type": "float",
+         "value": 7.0
+      },
+      {
+         "name": "h_ram1",
+         "type": "float",
+         "value": 2.0
+      },
+      {
+         "name": "mezera",
+         "type": "float",
+         "value": 1.3
+      },
+      {
+         "name": "lengthram",
+         "type": "float",
+         "value": 7.4
+      },
+      {
+         "name": "Er_ref",
+         "type": "float",
+         "value": 3.53
+      },
+      {
+         "name": "Er_delta",
+         "type": "float",
+         "value": 0.05
+      },
+      {
+         "name": "delta_w",
+         "type": "float",
+         "value": 0.02
+      },
+      {
+         "name": "resistor_R",
+         "type": "float",
+         "value": 120.0
+      }
+   ],
+   "outputVariables": []
+}

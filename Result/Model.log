@@ -1,0 +1,751 @@
+2026-02-01 18:43:56   Build version: 2025.0 Release from 2024-08-30 (change 1315043)
+
+2026-02-01 18:43:56   Starting adaptive port meshing.
+
+                      ------------------------------------------------------------------------------
+2026-02-01 18:43:56   Mode calculation for port 1:
+
+                      ------------------------------------------------------------------------------
+2026-02-01 18:43:56   According to the selected features the <Time Domain Solver (HEX)> will be
+                      started.
+
+                      ------------------------------------------------------------------------------
+2026-02-01 18:43:56   
+
+                      ------------------------------------------------------------------------------
+2026-02-01 18:43:56   
+
+                      ------------------------------------------------------------------------------
+2026-02-01 18:43:58   The following lumped edge element is connected to metal material:
+                      	Folder1:element1
+
+                      ------------------------------------------------------------------------------
+2026-02-01 18:43:59   Using Generalized port mode solver.
+
+                      ------------------------------------------------------------------------------
+2026-02-01 18:43:59   *** Warning ***
+
+2026-02-01 18:43:59   Waveguide port 1 touches transversal open boundary. This may lead to inaccurate results. Please check your structure.
+
+                      ------------------------------------------------------------------------------
+2026-02-01 18:43:59   Port mode solver: Detected dispersive material(s) at port 1. 
+                      Using a constant approximation of dispersive material(s) at 4.5 GHz and neglecting loss terms.  More...
+
+                      ------------------------------------------------------------------------------
+2026-02-01 18:44:00     -------------------------------- F-Calc 4.5 --------------------------------
+                        Port   Mode   Type        Z-Wave        Z-Wave-Sigma  Z-Line        F-Cutoff
+                        1      1      QTEM        254           28.4          61.7          ---
+                        ----------------------------------------------------------------------------
+
+2026-02-01 18:44:00   Pass 1 successfully completed. 
+2026-02-01 18:44:00   According to the selected features the <Time Domain Solver (HEX)> will be
+                      started.
+
+                      ------------------------------------------------------------------------------
+2026-02-01 18:44:00   
+
+                      ------------------------------------------------------------------------------
+2026-02-01 18:44:00   
+
+                      ------------------------------------------------------------------------------
+2026-02-01 18:44:02   The following lumped edge element is connected to metal material:
+                      	Folder1:element1
+
+                      ------------------------------------------------------------------------------
+2026-02-01 18:44:04     -------------------------------- F-Calc 4.5 --------------------------------
+                        Port   Mode   Type        Z-Wave        Z-Wave-Sigma  Z-Line        F-Cutoff
+                        1      1      QTEM        283           1.09e-008     64            ---
+                        ----------------------------------------------------------------------------
+
+2026-02-01 18:44:04   Pass 2 successfully completed. Delta (Line Imp.): 3.70%
+2026-02-01 18:44:04   According to the selected features the <Time Domain Solver (HEX)> will be
+                      started.
+
+                      ------------------------------------------------------------------------------
+2026-02-01 18:44:05   
+
+                      ------------------------------------------------------------------------------
+2026-02-01 18:44:05   
+
+                      ------------------------------------------------------------------------------
+2026-02-01 18:44:07   The following lumped edge element is connected to metal material:
+                      	Folder1:element1
+
+                      ------------------------------------------------------------------------------
+2026-02-01 18:44:09     -------------------------------- F-Calc 4.5 --------------------------------
+                        Port   Mode   Type        Z-Wave        Z-Wave-Sigma  Z-Line        F-Cutoff
+                        1      1      QTEM        294           3.47e-007     65.1          ---
+                        ----------------------------------------------------------------------------
+
+2026-02-01 18:44:09   Pass 3 successfully completed. Delta (Line Imp.): 1.65%
+2026-02-01 18:44:09   According to the selected features the <Time Domain Solver (HEX)> will be
+                      started.
+
+                      ------------------------------------------------------------------------------
+2026-02-01 18:44:10   
+
+                      ------------------------------------------------------------------------------
+2026-02-01 18:44:10   
+
+                      ------------------------------------------------------------------------------
+2026-02-01 18:44:14   The following lumped edge element is connected to metal material:
+                      	Folder1:element1
+
+                      ------------------------------------------------------------------------------
+2026-02-01 18:44:15     -------------------------------- F-Calc 4.5 --------------------------------
+                        Port   Mode   Type        Z-Wave        Z-Wave-Sigma  Z-Line        F-Cutoff
+                        1      1      QTEM        319           9.41e-008     65.4          ---
+                        ----------------------------------------------------------------------------
+
+2026-02-01 18:44:16   Pass 4 successfully completed. Delta (Line Imp.): 0.45%
+2026-02-01 18:44:16   Mode calculation for port 2:
+
+                      ------------------------------------------------------------------------------
+2026-02-01 18:44:16   According to the selected features the <Time Domain Solver (HEX)> will be
+                      started.
+
+                      ------------------------------------------------------------------------------
+2026-02-01 18:44:16   
+
+                      ------------------------------------------------------------------------------
+2026-02-01 18:44:16   
+
+                      ------------------------------------------------------------------------------
+2026-02-01 18:44:18   The following lumped edge element is connected to metal material:
+                      	Folder1:element1
+
+                      ------------------------------------------------------------------------------
+2026-02-01 18:44:18   Using Generalized port mode solver.
+
+                      ------------------------------------------------------------------------------
+2026-02-01 18:44:19   *** Warning ***
+
+2026-02-01 18:44:19   Waveguide port 2 touches transversal open boundary. This may lead to inaccurate results. Please check your structure.
+
+                      ------------------------------------------------------------------------------
+2026-02-01 18:44:19   Port mode solver: Detected dispersive material(s) at port 2. 
+                      Using a constant approximation of dispersive material(s) at 4.5 GHz and neglecting loss terms.  More...
+
+                      ------------------------------------------------------------------------------
+2026-02-01 18:44:19     -------------------------------- F-Calc 4.5 --------------------------------
+                        Port   Mode   Type        Z-Wave        Z-Wave-Sigma  Z-Line        F-Cutoff
+                        2      1      QTEM        223           0             66.7          ---
+                        ----------------------------------------------------------------------------
+
+2026-02-01 18:44:20   Pass 1 successfully completed. 
+2026-02-01 18:44:20   According to the selected features the <Time Domain Solver (HEX)> will be
+                      started.
+
+                      ------------------------------------------------------------------------------
+2026-02-01 18:44:20   
+
+                      ------------------------------------------------------------------------------
+2026-02-01 18:44:20   
+
+                      ------------------------------------------------------------------------------
+2026-02-01 18:44:22   The following lumped edge element is connected to metal material:
+                      	Folder1:element1
+
+                      ------------------------------------------------------------------------------
+2026-02-01 18:44:23     -------------------------------- F-Calc 4.5 --------------------------------
+                        Port   Mode   Type        Z-Wave        Z-Wave-Sigma  Z-Line        F-Cutoff
+                        2      1      QTEM        228           0             67.6          ---
+                        ----------------------------------------------------------------------------
+
+2026-02-01 18:44:24   Pass 2 successfully completed. Delta (Line Imp.): 1.38%
+2026-02-01 18:44:24   According to the selected features the <Time Domain Solver (HEX)> will be
+                      started.
+
+                      ------------------------------------------------------------------------------
+2026-02-01 18:44:24   
+
+                      ------------------------------------------------------------------------------
+2026-02-01 18:44:24   
+
+                      ------------------------------------------------------------------------------
+2026-02-01 18:44:26   The following lumped edge element is connected to metal material:
+                      	Folder1:element1
+
+                      ------------------------------------------------------------------------------
+2026-02-01 18:44:27     -------------------------------- F-Calc 4.5 --------------------------------
+                        Port   Mode   Type        Z-Wave        Z-Wave-Sigma  Z-Line        F-Cutoff
+                        2      1      QTEM        284           0             67.7          ---
+                        ----------------------------------------------------------------------------
+
+2026-02-01 18:44:28   Pass 3 successfully completed. Delta (Line Imp.): 0.12%
+2026-02-01 18:44:28   According to the selected features the <Time Domain Solver (HEX)> will be
+                      started.
+
+                      ------------------------------------------------------------------------------
+2026-02-01 18:44:28   
+
+                      ------------------------------------------------------------------------------
+2026-02-01 18:44:28   
+
+                      ------------------------------------------------------------------------------
+2026-02-01 18:44:30   The following lumped edge element is connected to metal material:
+                      	Folder1:element1
+
+                      ------------------------------------------------------------------------------
+2026-02-01 18:44:32     -------------------------------- F-Calc 4.5 --------------------------------
+                        Port   Mode   Type        Z-Wave        Z-Wave-Sigma  Z-Line        F-Cutoff
+                        2      1      QTEM        296           0             67.7          ---
+                        ----------------------------------------------------------------------------
+
+2026-02-01 18:44:33   Pass 4 successfully completed. Delta (Line Imp.): 0.00%
+2026-02-01 18:44:33   Mode calculation for port 3:
+
+                      ------------------------------------------------------------------------------
+2026-02-01 18:44:33   According to the selected features the <Time Domain Solver (HEX)> will be
+                      started.
+
+                      ------------------------------------------------------------------------------
+2026-02-01 18:44:33   
+
+                      ------------------------------------------------------------------------------
+2026-02-01 18:44:33   
+
+                      ------------------------------------------------------------------------------
+2026-02-01 18:44:34   The following lumped edge element is connected to metal material:
+                      	Folder1:element1
+
+                      ------------------------------------------------------------------------------
+2026-02-01 18:44:35   Using Generalized port mode solver.
+
+                      ------------------------------------------------------------------------------
+2026-02-01 18:44:35   *** Warning ***
+
+2026-02-01 18:44:35   Waveguide port 3 touches transversal open boundary. This may lead to inaccurate results. Please check your structure.
+
+                      ------------------------------------------------------------------------------
+2026-02-01 18:44:35   Port mode solver: Detected dispersive material(s) at port 3. 
+                      Using a constant approximation of dispersive material(s) at 4.5 GHz and neglecting loss terms.  More...
+
+                      ------------------------------------------------------------------------------
+2026-02-01 18:44:36     -------------------------------- F-Calc 4.5 --------------------------------
+                        Port   Mode   Type        Z-Wave        Z-Wave-Sigma  Z-Line        F-Cutoff
+                        3      1      QTEM        223           0             66.7          ---
+                        ----------------------------------------------------------------------------
+
+2026-02-01 18:44:36   Pass 1 successfully completed. 
+2026-02-01 18:44:36   According to the selected features the <Time Domain Solver (HEX)> will be
+                      started.
+
+                      ------------------------------------------------------------------------------
+2026-02-01 18:44:36   
+
+                      ------------------------------------------------------------------------------
+2026-02-01 18:44:36   
+
+                      ------------------------------------------------------------------------------
+2026-02-01 18:44:38   The following lumped edge element is connected to metal material:
+                      	Folder1:element1
+
+                      ------------------------------------------------------------------------------
+2026-02-01 18:44:39     -------------------------------- F-Calc 4.5 --------------------------------
+                        Port   Mode   Type        Z-Wave        Z-Wave-Sigma  Z-Line        F-Cutoff
+                        3      1      QTEM        228           0             67.6          ---
+                        ----------------------------------------------------------------------------
+
+2026-02-01 18:44:40   Pass 2 successfully completed. Delta (Line Imp.): 1.38%
+2026-02-01 18:44:40   According to the selected features the <Time Domain Solver (HEX)> will be
+                      started.
+
+                      ------------------------------------------------------------------------------
+2026-02-01 18:44:40   
+
+                      ------------------------------------------------------------------------------
+2026-02-01 18:44:40   
+
+                      ------------------------------------------------------------------------------
+2026-02-01 18:44:42   The following lumped edge element is connected to metal material:
+                      	Folder1:element1
+
+                      ------------------------------------------------------------------------------
+2026-02-01 18:44:44     -------------------------------- F-Calc 4.5 --------------------------------
+                        Port   Mode   Type        Z-Wave        Z-Wave-Sigma  Z-Line        F-Cutoff
+                        3      1      QTEM        284           0             67.7          ---
+                        ----------------------------------------------------------------------------
+
+2026-02-01 18:44:44   Pass 3 successfully completed. Delta (Line Imp.): 0.12%
+2026-02-01 18:44:44   According to the selected features the <Time Domain Solver (HEX)> will be
+                      started.
+
+                      ------------------------------------------------------------------------------
+2026-02-01 18:44:45   
+
+                      ------------------------------------------------------------------------------
+2026-02-01 18:44:45   
+
+                      ------------------------------------------------------------------------------
+2026-02-01 18:44:47   The following lumped edge element is connected to metal material:
+                      	Folder1:element1
+
+                      ------------------------------------------------------------------------------
+2026-02-01 18:44:49     -------------------------------- F-Calc 4.5 --------------------------------
+                        Port   Mode   Type        Z-Wave        Z-Wave-Sigma  Z-Line        F-Cutoff
+                        3      1      QTEM        296           0             67.7          ---
+                        ----------------------------------------------------------------------------
+
+2026-02-01 18:44:49   Pass 4 successfully completed. Delta (Line Imp.): 0.00%
+2026-02-01 18:44:49   Adaptive port meshing finished. 
+
+                      ------------------------------------------------------------------------------
+2026-02-01 18:44:50   According to the selected features the <Time Domain Solver (HEX)> will be
+                      started.
+
+                      ------------------------------------------------------------------------------
+2026-02-01 18:44:50   
+                      Solver started at: 2026-02-01 18:44:50 +0300
+
+                        Module:  Time Domain: S-Parameter (Win 64)
+                        Version: 2025.0 Release from 2024-08-30 (change 1315043)
+
+2026-02-01 18:44:50   
+
+                      ------------------------------------------------------------------------------
+2026-02-01 18:44:50   
+
+                      ------------------------------------------------------------------------------
+2026-02-01 18:44:50   ======================================================================
+                       Solver cycle: 1
+                      ======================================================================
+
+                      Stimulation at port 1 (mode 1) 
+
+
+
+                      ------------------------------------------------------------------------------
+2026-02-01 18:44:51   Units settings: 
+
+                        Dimensions: mm
+                        Frequency:  GHz
+                        Time:       ns
+
+                      ------------------------------------------------------------------------------
+2026-02-01 18:44:51   The dispersive material update [Automatic] will be performed using the "Standard" update schema
+
+                      ------------------------------------------------------------------------------
+2026-02-01 18:45:07   The following lumped edge element is connected to metal material:
+                      	Folder1:element1
+
+                      ------------------------------------------------------------------------------
+2026-02-01 18:45:08   Mesh statistics:
+
+                         Hexahedral mesh type: Perfect Boundary Approximation (PBA)
+                            Version: default
+
+                         Parallelization type: domain decomposition
+                            Number of parallel working threads: 1
+                            Number of calculation domains used: 1
+
+                         Used point accuracy enhancement value: 75.00%.
+                         Acceleration mode: CPU
+2026-02-01 17:11:51      current system memory usage reached 80%
+2026-02-01 17:11:55      current system memory usage reached 80%
+2026-02-01 17:11:59      current system memory usage reached 80%
+2026-02-01 17:12:05      current system memory usage reached 80%
+2026-02-01 17:12:09      current system memory usage reached 80%
+2026-02-01 17:12:13      current system memory usage reached 80%
+2026-02-01 17:12:18      current system memory usage reached 80%
+2026-02-01 17:12:22      current system memory usage reached 80%
+2026-02-01 17:12:26      current system memory usage reached 80%
+2026-02-01 17:12:30      current system memory usage reached 80%
+2026-02-01 17:12:35      current system memory usage reached 80%
+                         PBA fill limit: 99.00% (inverse)
+
+2026-02-01 18:45:08   *** Warning ***
+
+2026-02-01 18:45:08   Inhomogeneous material at open boundary detected. (The structure must be identical in the open boundary plane and the 
+                      next two mesh steps.)
+                      Location(s): ymax
+
+                      ------------------------------------------------------------------------------
+2026-02-01 18:45:10   Using Generalized port mode solver.
+
+                      ------------------------------------------------------------------------------
+2026-02-01 18:45:11   *** Warning ***
+
+2026-02-01 18:45:11   Waveguide port 1 touches transversal open boundary. This may lead to inaccurate results. Please check your structure.
+
+                      ------------------------------------------------------------------------------
+2026-02-01 18:45:11   *** Warning ***
+
+2026-02-01 18:45:11   Waveguide port 2 touches transversal open boundary. This may lead to inaccurate results. Please check your structure.
+
+                      ------------------------------------------------------------------------------
+2026-02-01 18:45:11   *** Warning ***
+
+2026-02-01 18:45:11   Waveguide port 3 touches transversal open boundary. This may lead to inaccurate results. Please check your structure.
+
+                      ------------------------------------------------------------------------------
+2026-02-01 18:45:11   Port mode solver: Detected dispersive material(s) at port 1, 2, 3. 
+                      Using a constant approximation of dispersive material(s) at 4.5 GHz and neglecting loss terms.  More...
+
+                      ------------------------------------------------------------------------------
+2026-02-01 18:45:11   Boundary conditions: 
+
+                        YZsymmetry: none
+                        XZsymmetry: none
+                        XYsymmetry: none
+
+                        Xmin: open, 4 Layer, depth 4.06709 mm
+                        Xmax: open, 4 Layer, depth 4.06709 mm
+
+                        Ymin: open, 4 Layer, depth 4.03608 mm
+                        Ymax: open, 4 Layer, depth 4.12989 mm
+
+                        Zmin: electric
+                        Zmax: open, 4 Layer, depth 7.70416 mm
+
+                        PML-Type: Convolution PML
+
+                      ------------------------------------------------------------------------------
+2026-02-01 18:45:11   Frequency settings: 
+
+                        Fmin:         4
+                        Fmax:         5
+                        Nfsteps(lin): 1001
+
+                      ------------------------------------------------------------------------------
+2026-02-01 18:45:12   Field update statistics:
+
+                        Number of components in total: 	205007
+                        Number of lossy metal components:	8057
+                        Number of disp. elements:		19687
+
+                      Subcycling state:      			Automatically deactivated
+
+                      ------------------------------------------------------------------------------
+2026-02-01 18:45:12   Waveguide boundaries:
+
+2026-02-01 18:45:12   Port: 1
+
+2026-02-01 18:45:12     -------------------------------- F-Calc 4.5 --------------------------------
+                        Port   Mode   Type        Z-Wave        Z-Wave-Sigma  Z-Line        F-Cutoff
+                        1      1      QTEM        229           6.44e-007     65.4          ---
+                        ----------------------------------------------------------------------------
+
+2026-02-01 18:45:12   Port: 2
+
+2026-02-01 18:45:12     -------------------------------- F-Calc 4.5 --------------------------------
+                        Port   Mode   Type        Z-Wave        Z-Wave-Sigma  Z-Line        F-Cutoff
+                        2      1      QTEM        223           0             67.7          ---
+                        ----------------------------------------------------------------------------
+
+2026-02-01 18:45:12   Port: 3
+
+2026-02-01 18:45:12     -------------------------------- F-Calc 4.5 --------------------------------
+                        Port   Mode   Type        Z-Wave        Z-Wave-Sigma  Z-Line        F-Cutoff
+                        3      1      QTEM        223           0             67.7          ---
+                        ----------------------------------------------------------------------------
+
+2026-02-01 18:45:12   Using standard absorber for unconsidered modes at port 1.
+
+                      ------------------------------------------------------------------------------
+2026-02-01 18:45:12   Using standard absorber for unconsidered modes at port 2.
+
+                      ------------------------------------------------------------------------------
+2026-02-01 18:45:12   Using standard absorber for unconsidered modes at port 3.
+
+                      ------------------------------------------------------------------------------
+2026-02-01 18:45:13   *** Warning ***
+
+2026-02-01 18:45:13   Dispersive materials are not supported at open boundary. This may lead to inaccurate results. Locations(s): xmin xmax 
+                      ymin ymax
+
+                      ------------------------------------------------------------------------------
+2026-02-01 18:45:36   
+                      --------------------------------------------------------------------------------
+2026-02-01 18:45:36   Steady state energy criterion met, solver finished successfully.
+
+                      ------------------------------------------------------------------------------
+2026-02-01 18:45:36   Frequency domain results normalized to default signal.
+
+
+                      ------------------------------------------------------------------------------
+2026-02-01 18:45:36   
+                        ----------------------------------------------------------------------------
+                                            Peak memory used (kB)         Free physical memory (kB) 
+                                                                          At begin     Minimum      
+                        ----------------------------------------------------------------------------
+                        Matrices calc.      121093                        1665039      1547851      
+                        Solver run total    130904                        1702252      1501288      
+                        ----------------------------------------------------------------------------
+
+                      --------------------------------------------------------------------------------
+                      Solver Statistics:
+
+                        Hardware:
+                           Computer name:                 	DESKTOP-QU38ICE 
+
+                           Number of CPU threads:               4
+                           Hardware info:                  	Hardware Accelerator Device not activated
+
+                        Number of mesh cells:             	31842
+                        Excitation duration:              	7.10909750e+000 ns 
+                        Calculation time for excitation:  	0 	s
+                        Number of calculated pulse widths:	1.001 
+                        Steady state accuracy limit:      	-40	dB 
+                        Simulated number of time steps:   	18083 
+                        Maximum number of time steps:     	361299 
+                        Time step width:
+                           without subcycles:             	3.935289899e-004 ns
+                           used:                          	3.935289899e-004 ns
+
+                        Matrix calculation time:          	17 	s
+                        Solver setup time:                	6 	s
+                        Solver loop time:                 	20 	s
+                        Solver post-processing time:      	1 	s
+                                                          	------------
+                        Total solver time:                	44 	s
+
+                      ------------------------------------------------------------------------------
+2026-02-01 18:45:37   ======================================================================
+                       Solver cycle: 2
+                      ======================================================================
+
+                      Stimulation at port 2 (mode 1) 
+
+
+
+                      ------------------------------------------------------------------------------
+2026-02-01 18:45:37   Units settings: 
+
+                        Dimensions: mm
+                        Frequency:  GHz
+                        Time:       ns
+
+                      ------------------------------------------------------------------------------
+2026-02-01 18:45:37   The dispersive material update will be performed using the "Standard" update schema
+
+                      ------------------------------------------------------------------------------
+2026-02-01 18:45:37   The following lumped edge element is connected to metal material:
+                      	Folder1:element1
+
+                      ------------------------------------------------------------------------------
+2026-02-01 18:45:38   *** Warning ***
+
+2026-02-01 18:45:38   Inhomogeneous material at open boundary detected. (The structure must be identical in the open boundary plane and the 
+                      next two mesh steps.)
+                      Location(s): ymax
+
+                      ------------------------------------------------------------------------------
+2026-02-01 18:45:38   Boundary conditions: 
+
+                        YZsymmetry: none
+                        XZsymmetry: none
+                        XYsymmetry: none
+
+                        Xmin: open, 4 Layer, depth 4.06709 mm
+                        Xmax: open, 4 Layer, depth 4.06709 mm
+
+                        Ymin: open, 4 Layer, depth 4.03608 mm
+                        Ymax: open, 4 Layer, depth 4.12989 mm
+
+                        Zmin: electric
+                        Zmax: open, 4 Layer, depth 7.70416 mm
+
+                        PML-Type: Convolution PML
+
+                      ------------------------------------------------------------------------------
+2026-02-01 18:45:38   Frequency settings: 
+
+                        Fmin:         4
+                        Fmax:         5
+                        Nfsteps(lin): 1001
+
+                      ------------------------------------------------------------------------------
+2026-02-01 18:45:39   Field update statistics:
+
+                        Number of components in total: 	205007
+                        Number of lossy metal components:	8057
+                        Number of disp. elements:		19687
+
+                      Subcycling state:      			Automatically deactivated
+
+                      ------------------------------------------------------------------------------
+2026-02-01 18:45:39   *** Warning ***
+
+2026-02-01 18:45:39   Dispersive materials are not supported at open boundary. This may lead to inaccurate results. Locations(s): xmin xmax 
+                      ymin ymax
+
+                      ------------------------------------------------------------------------------
+2026-02-01 18:46:06   
+                      --------------------------------------------------------------------------------
+2026-02-01 18:46:06   Steady state energy criterion met, solver finished successfully.
+
+                      ------------------------------------------------------------------------------
+2026-02-01 18:46:06   Frequency domain results normalized to default signal.
+
+
+                      ------------------------------------------------------------------------------
+2026-02-01 18:46:06   
+                        ----------------------------------------------------------------------------
+                                            Peak memory used (kB)         Free physical memory (kB) 
+                                                                          At begin     Minimum      
+                        ----------------------------------------------------------------------------
+                        Matrices calc.      121093                        1665039      1547851      
+                        Solver run total    141364                        1564496      1550916      
+                        ----------------------------------------------------------------------------
+
+                      --------------------------------------------------------------------------------
+                      Solver Statistics:
+
+                        Hardware:
+                           Computer name:                 	DESKTOP-QU38ICE 
+
+                           Number of CPU threads:               4
+                           Hardware info:                  	Hardware Accelerator Device not activated
+
+                        Number of mesh cells:             	31842
+                        Excitation duration:              	7.10909750e+000 ns 
+                        Calculation time for excitation:  	0 	s
+                        Number of calculated pulse widths:	1.001 
+                        Steady state accuracy limit:      	-40	dB 
+                        Simulated number of time steps:   	18083 
+                        Maximum number of time steps:     	361299 
+                        Time step width:
+                           without subcycles:             	3.935289899e-004 ns
+                           used:                          	3.935289899e-004 ns
+
+                        Reloading matrices:               	0 	s
+                        Solver setup time:                	2 	s
+                        Solver loop time:                 	21 	s
+                        Solver post-processing time:      	4 	s
+                                                          	------------
+                        Total solver time:                	27 	s
+
+                      ------------------------------------------------------------------------------
+2026-02-01 18:46:07   ======================================================================
+                       Solver cycle: 3
+                      ======================================================================
+
+                      Stimulation at port 3 (mode 1) 
+
+
+
+                      ------------------------------------------------------------------------------
+2026-02-01 18:46:07   Units settings: 
+
+                        Dimensions: mm
+                        Frequency:  GHz
+                        Time:       ns
+
+                      ------------------------------------------------------------------------------
+2026-02-01 18:46:07   The dispersive material update will be performed using the "Standard" update schema
+
+                      ------------------------------------------------------------------------------
+2026-02-01 18:46:08   The following lumped edge element is connected to metal material:
+                      	Folder1:element1
+
+                      ------------------------------------------------------------------------------
+2026-02-01 18:46:09   *** Warning ***
+
+2026-02-01 18:46:09   Inhomogeneous material at open boundary detected. (The structure must be identical in the open boundary plane and the 
+                      next two mesh steps.)
+                      Location(s): ymax
+
+                      ------------------------------------------------------------------------------
+2026-02-01 18:46:13   Boundary conditions: 
+
+                        YZsymmetry: none
+                        XZsymmetry: none
+                        XYsymmetry: none
+
+                        Xmin: open, 4 Layer, depth 4.06709 mm
+                        Xmax: open, 4 Layer, depth 4.06709 mm
+
+                        Ymin: open, 4 Layer, depth 4.03608 mm
+                        Ymax: open, 4 Layer, depth 4.12989 mm
+
+                        Zmin: electric
+                        Zmax: open, 4 Layer, depth 7.70416 mm
+
+                        PML-Type: Convolution PML
+
+                      ------------------------------------------------------------------------------
+2026-02-01 18:46:13   Frequency settings: 
+
+                        Fmin:         4
+                        Fmax:         5
+                        Nfsteps(lin): 1001
+
+                      ------------------------------------------------------------------------------
+2026-02-01 18:46:13   Field update statistics:
+
+                        Number of components in total: 	205007
+                        Number of lossy metal components:	8057
+                        Number of disp. elements:		19687
+
+                      Subcycling state:      			Automatically deactivated
+
+                      ------------------------------------------------------------------------------
+2026-02-01 18:46:15   *** Warning ***
+
+2026-02-01 18:46:15   Dispersive materials are not supported at open boundary. This may lead to inaccurate results. Locations(s): xmin xmax 
+                      ymin ymax
+
+                      ------------------------------------------------------------------------------
+2026-02-01 18:46:46   
+                      --------------------------------------------------------------------------------
+2026-02-01 18:46:46   Steady state energy criterion met, solver finished successfully.
+
+                      ------------------------------------------------------------------------------
+2026-02-01 18:46:46   Frequency domain results normalized to default signal.
+
+
+                      ------------------------------------------------------------------------------
+2026-02-01 18:46:46   
+                        ----------------------------------------------------------------------------
+                                            Peak memory used (kB)         Free physical memory (kB) 
+                                                                          At begin     Minimum      
+                        ----------------------------------------------------------------------------
+                        Matrices calc.      121093                        1665039      1547851      
+                        Solver run total    144528                        1582208      1574080      
+                        ----------------------------------------------------------------------------
+
+                      --------------------------------------------------------------------------------
+                      Solver Statistics:
+
+                        Hardware:
+                           Computer name:                 	DESKTOP-QU38ICE 
+
+                           Number of CPU threads:               4
+                           Hardware info:                  	Hardware Accelerator Device not activated
+
+                        Number of mesh cells:             	31842
+                        Excitation duration:              	7.10909750e+000 ns 
+                        Calculation time for excitation:  	0 	s
+                        Number of calculated pulse widths:	1.001 
+                        Steady state accuracy limit:      	-40	dB 
+                        Simulated number of time steps:   	18083 
+                        Maximum number of time steps:     	361299 
+                        Time step width:
+                           without subcycles:             	3.935289899e-004 ns
+                           used:                          	3.935289899e-004 ns
+
+                        Reloading matrices:               	1 	s
+                        Solver setup time:                	12 	s
+                        Solver loop time:                 	20 	s
+                        Solver post-processing time:      	4 	s
+                                                          	------------
+                        Total solver time:                	37 	s
+
+                      ------------------------------------------------------------------------------
+2026-02-01 18:46:47   
+                        Adaptive port meshing time:          	56     	s
+                        Total solver time (all cycles):      	108    	s  ( = 0 h, 1 m, 48 s )
+                        Solver initialization and clean-up:  	9      	s
+                                                             	------------
+                        Total simulation time:               	173    	s  ( = 0 h, 2 m, 53 s )
+
+                      ------------------------------------------------------------------------------
+2026-02-01 18:46:47   Solver finished at: 2026-02-01 18:46:47 +0300
+
+
+
+                      ------------------------------------------------------------------------------
+2026-02-01 18:46:51   Creating parametric 1D results for Run ID 17
+
+                      ------------------------------------------------------------------------------

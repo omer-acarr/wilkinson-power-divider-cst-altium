@@ -1,0 +1,123 @@
+2026-02-01 18:28:32   Some of the upcoming parameter combinations were already performed previously and will be skipped.
+                      Potential changes in the result settings like Template Based Post Processing are not taken into account. The feature can be deactivated via "Parameter Sweep -> Options..."
+2026-02-01 18:28:32   ==========================================================================
+                      Sequence: Sequence 1
+                      ==========================================================================
+
+2026-02-01 18:28:32   --------------------------------------------------------------------------
+                      Parameter Values: 
+
+                         Er_ref = 3.43
+2026-02-01 18:28:32   
+                      Structure update: Successful
+2026-02-01 18:30:53              Solver: Successful [0 hours, 2 min., 21 sec.]
+2026-02-01 18:30:53   --------------------------------------------------------------------------
+                      Parameter Values: 
+
+                         Er_ref = 3.455
+2026-02-01 18:30:54   
+                      Structure update: Successful
+2026-02-01 18:32:58              Solver: Successful [0 hours, 2 min., 4 sec.]
+2026-02-01 18:32:58   --------------------------------------------------------------------------
+                      Parameter Values: 
+
+                         Er_ref = 3.48
+2026-02-01 18:32:58   
+                      Structure update: Successful
+2026-02-01 18:35:01              Solver: Successful [0 hours, 2 min., 3 sec.]
+2026-02-01 18:35:01   --------------------------------------------------------------------------
+                      Parameter Values: 
+
+                         Er_ref = 3.505
+2026-02-01 18:35:02   
+                      Structure update: Successful [0 hours, 0 min., 1 sec.]
+2026-02-01 18:37:02              Solver: Successful [0 hours, 2 min., 0 sec.]
+2026-02-01 18:37:02   --------------------------------------------------------------------------
+                      Parameter Values: 
+
+                         Er_ref = 3.53
+2026-02-01 18:37:02   
+                      Simulation for this parameter combination has already been performed (Run ID found).
+2026-02-01 18:37:02   --------------------------------------------------------------------------
+
+2026-02-01 18:37:02   ==========================================================================
+                      Sequence: Sequence 2
+                      ==========================================================================
+
+2026-02-01 18:37:02   --------------------------------------------------------------------------
+                      Parameter Values: 
+
+                         resistor_R = 80
+2026-02-01 18:37:02   
+                      Simulation for this parameter combination has already been performed (Run ID found).
+2026-02-01 18:37:02   --------------------------------------------------------------------------
+                      Parameter Values: 
+
+                         resistor_R = 90
+2026-02-01 18:37:02   
+                      Simulation for this parameter combination has already been performed (Run ID found).
+2026-02-01 18:37:02   --------------------------------------------------------------------------
+                      Parameter Values: 
+
+                         resistor_R = 100
+2026-02-01 18:37:02   
+                      Simulation for this parameter combination has already been performed (Run ID found).
+2026-02-01 18:37:02   --------------------------------------------------------------------------
+                      Parameter Values: 
+
+                         resistor_R = 110
+2026-02-01 18:37:02   
+                      Simulation for this parameter combination has already been performed (Run ID found).
+2026-02-01 18:37:02   --------------------------------------------------------------------------
+                      Parameter Values: 
+
+                         resistor_R = 120
+2026-02-01 18:37:02   
+                      Simulation for this parameter combination has already been performed (Run ID found).
+2026-02-01 18:37:02   --------------------------------------------------------------------------
+
+2026-02-01 18:37:02   ==========================================================================
+                      Sequence: Sequence 3
+                      ==========================================================================
+
+2026-02-01 18:37:02   --------------------------------------------------------------------------
+                      Parameter Values: 
+
+                         lengthram = 7
+2026-02-01 18:37:02   
+                      Simulation for this parameter combination has already been performed (Run ID found).
+2026-02-01 18:37:02   --------------------------------------------------------------------------
+                      Parameter Values: 
+
+                         lengthram = 7.1
+2026-02-01 18:37:04   
+                      Structure update: Successful [0 hours, 0 min., 1 sec.]
+2026-02-01 18:38:54              Solver: Successful [0 hours, 1 min., 50 sec.]
+2026-02-01 18:38:54   --------------------------------------------------------------------------
+                      Parameter Values: 
+
+                         lengthram = 7.2
+2026-02-01 18:38:55   
+                      Structure update: Successful [0 hours, 0 min., 1 sec.]
+2026-02-01 18:41:40              Solver: Successful [0 hours, 2 min., 45 sec.]
+2026-02-01 18:41:40   --------------------------------------------------------------------------
+                      Parameter Values: 
+
+                         lengthram = 7.3
+2026-02-01 18:41:41   
+                      Structure update: Successful
+2026-02-01 18:43:52              Solver: Successful [0 hours, 2 min., 11 sec.]
+2026-02-01 18:43:52   --------------------------------------------------------------------------
+                      Parameter Values: 
+
+                         lengthram = 7.4
+2026-02-01 18:43:53   
+                      Structure update: Successful
+2026-02-01 18:46:51              Solver: Successful [0 hours, 2 min., 58 sec.]
+2026-02-01 18:46:51   --------------------------------------------------------------------------
+2026-02-01 18:46:51   7 parameter combinations were skipped in the parameter sweep because they were already performed previously.
+2026-02-01 18:46:51   
+                      ==========================================================================
+                      Total structure update time: 0 hours, 0 min., 3 sec.
+                            Total evaluation time: 0 hours, 18 min., 12 sec.
+                      ==========================================================================
