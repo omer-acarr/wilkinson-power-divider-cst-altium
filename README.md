@@ -1,37 +1,39 @@
-# 4.5 GHz Microstrip Wilkinson Power Divider: From EM Simulation to PCB Fabrication
+# 4.5 GHz Microstrip Wilkinson Power Divider: From EM Simulation to Active System Integration
 
-This repository covers the complete engineering lifecycle of a **Wilkinson Power Divider** operating at 4.5 GHz. The project bridges the gap between high-fidelity electromagnetic simulations in **CST Studio Suite** and professional hardware implementation in **Altium Designer**.
+This repository covers the complete engineering lifecycle of a **Wilkinson Power Divider** operating at 4.5 GHz. The project bridges the gap between high-fidelity electromagnetic simulations in **CST Studio Suite**, system-level active integration, and professional hardware implementation in **Altium Designer**.
 
 ## 🚀 Project Overview
-Unlike ideal theoretical models, this design accounts for real-world manufacturing tolerances and parasitic elements. The performance was optimized using "Parameter Sweep" and "Full-Wave EM Simulation" techniques to compensate for frequency shifts and loss, resulting in industry-standard **Gerber** files ready for production.
+This design goes beyond ideal theoretical models by accounting for real-world manufacturing tolerances, parasitic elements, and **active system-level performance**. The workflow transitions from 3D EM optimization to a co-simulation environment where passive structures meet active semiconductor components.
 
 ## 🛠 Technical Specifications
 * **Center Frequency:** 4.5 GHz
-* **Substrate:** $h = 1.524$ mm, $\varepsilon_r \approx 3.53$ (High-frequency compatible laminate)
-* **Characteristic Impedance:** $50\,\Omega$ (Input/Output), $\sqrt{2}Z_0 \approx 70.7\,\Omega$ (Quarter-wave arms)
-* **Isolation Resistor:** $100\,\Omega$ - $120\,\Omega$ (Modeled with realistic 0603 package parasitics)
-* **PCB Dimensions:** $60\,\text{mm} \times 40\,\text{mm}$
+* **Substrate:** $h = 1.524$ mm, $\varepsilon_r \approx 3.53$ (Rogers RO4003C compatible)
+* **Isolation Resistor:** $100\,\Omega$ (Optimized with realistic 0603 package parasitics)
+* **Active Component:** Mini-Circuits **SAV-541+** pHEMT LNA (Integrated via .s2p Touchstone data)
 
 ## 📉 Design & Optimization Workflow
 
-### 1. High-Fidelity EM Simulation (CST Studio Suite)
-* **Parasitic Modeling:** Included $1.0\,\text{nH}$ series inductance and $0.05\,\text{pF}$ parallel capacitance to observe the impact of physical resistor packaging.
-* **Numerical Accuracy:** Applied a 30 cells-per-wavelength mesh density with "Electric (Et=0)" Zmin boundary conditions for stable ground reference.
-* **Optimization:** Performed parameter sweeps on `resistor_R` and `lengthram` to pull the resonance frequency back to the 4.5 GHz target after parasitic-induced upshifts.
+### 1. High-Fidelity EM Simulation (CST 3D)
+* **Numerical Accuracy:** Applied a 30 cells-per-wavelength mesh density with "Electric ($E_t=0$)" Zmin boundary conditions for stable ground reference.
+* **Optimization:** Performed parameter sweeps on `resistor_R` and `lengthram` to counteract parasitic-induced frequency shifts.
 
-### 2. Professional PCB Layout (Altium Designer)
-* **Board Shape:** Optimized to a compact $60 \times 40\,\text{mm}$ area on the **Keep-Out Layer**.
-* **Component Alignment:** Standardized component naming (**R1**) with vertical orientation to minimize signal interference and align with high-frequency design standards.
-* **RF Connectors:** Integrated **SMA Edge-Mount** rectangular pads ($1.5\,\text{mm} \times 2.0\,\text{mm}$) optimized for $50\,\Omega$ microstrip transitions.
+### 2. System-Level Active Integration (CST Schematic)
+* **Active Co-Simulation:** Transitioned the 3D EM model into the **CST Design Studio (Schematic)** environment.
+* **LNA Integration:** Integrated a Mini-Circuits **SAV-541+** Low Noise Amplifier at the output port using manufacturer-verified **Touchstone (.s2p)** data.
+* **Gain Compensation:** Successfully demonstrated the compensation of the intrinsic $-3$ dB division loss, achieving a **net system gain of $\sim +4.5$ dB**.
+* **Isolation Integrity:** Verified that port-to-port isolation remains robust at **$-26$ dB** even after active component integration.
 
-### 3. Manufacturing Preparation
-* **Gerber Generation:** Produced RS-274X format files with 4:4 (0.0001 mm) decimal precision to maintain microstrip geometry fidelity.
-* **Verification:** Validated copper geometry using **CAMtastic** to ensure perfect connectivity between SMA pads and microstrip traces.
+### 3. Professional PCB Layout (Altium Designer)
+* **Component Alignment:** Standardized component naming (**R1**) with vertical orientation to minimize signal interference.
+* **RF Transitions:** Integrated **SMA Edge-Mount** pads optimized for $50\,\Omega$ microstrip-to-connector transitions.
+* **Manufacturing:** Generated RS-274X Gerber files with high decimal precision to maintain microstrip geometry fidelity.
 
-## 📊 Simulation Results
-* **$S_{11}$ (Return Loss):** Achieved an impedance match of approximately $-7.5\,\text{dB}$ at the design frequency.
-* **$S_{21} / S_{31}$ (Insertion Loss):** Symmetric power division observed at $\sim -3.5\,\text{dB}$.
-* **$S_{23}$ (Isolation):** Stable port-to-port isolation maintained at $\sim -14\,\text{dB}$ despite parasitic inclusions.
+## 📊 Simulation Results (Active System)
+* **$S_{11}$ (Return Loss):** Strong impedance match achieved at $\sim -15$ dB near the center frequency.
+* **$S_{21}$ (System Gain):** Boosted to **> 0 dB** (Net gain of $\sim +4.5$ dB) due to LNA integration.
+* **$S_{23}$ (Isolation):** Exceptional port-to-port isolation maintained at **$-26$ dB**.
+
+
 
 
 
